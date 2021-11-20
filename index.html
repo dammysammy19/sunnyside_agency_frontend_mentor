@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="navbar">  
+        <div class="logo"><img src="./images/logo.svg" alt=""></div>
+        <button id="menu" class="mobile-icon"><img src="./images/icon-hamburger.svg" alt=""></button>
+        <nav class="desktop">
+          <ul class="desktop_menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="btn"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <ul class="mobile_menu">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="btn"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>  
+      <h1>We are creatives</h1>
+      <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
+    </header>
+    <main>
+      <section class="row">
+        <div class="image">
+          <img src="./images/desktop/image-transform.jpg" alt="">
+        </div>
+        <div class="content first">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast.
+          Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <a href="#">Learn more</a>
+        </div>
+    </section>
+      <section class="row">
+        <div class="image">
+          <img src="./images/desktop/image-stand-out.jpg" alt="">
+        </div>
+        <div class="content second">
+          <h2>Stand out to the right audience</h2>
+          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a href="#"> Learn more</a>
+        </div>
+      </section>
+      <div class="row">
+        <section class="single design">
+          <div class="content">
+            <h2>Graphic design</h2>
+            <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+            </p>
+          </div>
+        </section>
+        <section class="single photo">
+          <div class="content">
+            <h2>Photography</h2>
+            <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+            </p>
+          </div>
+        
+        </section>
+      </div>
+    </main>
+    <aside class=testimonials>
+      <h2>Client testimonials</h2>
+      <div class="testimonial-group">
+        <div class="testimonial">
+          <img src="./images/image-emily.jpg" alt="">
+          <p>  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <div class="person"> 
+            <div class="name">Emily R.</div>
+            <div class="title">Marketing Director</div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/image-thomas.jpg" alt="">
+          <p>  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <div class="person"> 
+            <div class="name">Thomas S.</div>
+            <div class="title">Chief Operating Officer</div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img src="./images/image-jennie.jpg" alt="">
+          <p>  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+          </p>
+          <div class="person"> 
+            <div class="name">Jennie F.</div>
+            <div class="title">Business Owner</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="gallery">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt=""><img src="./images/desktop/image-gallery-orange.jpg" alt=""><img src="./images/desktop/image-gallery-cone.jpg" alt=""><img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="">
+    </div>
+    <footer>
+      <img src="./images/logo.svg" alt="" class="footer-logo">
+      <ul class="links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+      <ul class="social">
+        <li><a href="#"></a><img src="./images/icon-facebook.svg" alt="facebook"></li>
+        <li><a href="#"></a><img src="./images/icon-instagram.svg" alt="instagram"></li>
+        <li><a href="#"></a><img src="./images/icon-twitter.svg" alt="twitter"></li>
+        <li><a href="#"></a><img src="./images/icon-pinterest.svg" alt="pinterest"></li>
+      </ul>
+    </footer>
+  </div>
+  <script>
+    let menu_button = document.querySelector('#menu');
+    let mobile_menu = document.querySelector('.mobile');
+    menu_button.addEventListener('click', () => mobile_menu.classList.toggle('active'));
+  </script>
+</body>
+</html>
